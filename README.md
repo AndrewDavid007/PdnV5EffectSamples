@@ -1,4 +1,5 @@
 # PdnV5EffectSamples
+
 Sample effect plugins that show how to use the new effect systems available in Paint.NET v5.0.
 
 The new effect system is split into two parts: `BitmapEffect`, which run on the CPU, and `GpuEffect` which use Direct2D for rendering on the GPU.
@@ -13,6 +14,9 @@ The new effect system is split into two parts: `BitmapEffect`, which run on the 
 - `GpuEffect` is the lowest-level base class, allowing you to specify the Direct2D drawing commands separately for each rendered tile. This can be used to optimize performance in extreme scenarios where the number of drawing commands is high, and Direct2D's built-in clipping performance is not sufficient. However, this is rarely the case, and `GpuDrawingEffect` should be preferred for when you need to perform imperative drawing.
 
 Microsoft's has documentation for Direct2D effects, although some of it must be gleamed from their open-source Win2D project.
-* Effects main page https://docs.microsoft.com/en-us/windows/win32/direct2d/effects-overview
-* Built-in effects https://docs.microsoft.com/en-us/windows/win32/direct2d/built-in-effects
-* Effect precision and clamping https://microsoft.github.io/Win2D/WinUI2/html/EffectPrecision.htm
+
+- Effects main page <https://docs.microsoft.com/en-us/windows/win32/direct2d/effects-overview>
+
+- Built-in effects <https://docs.microsoft.com/en-us/windows/win32/direct2d/built-in-effects>
+
+- Effect precision and clamping <https://microsoft.github.io/Win2D/WinUI2/html/EffectPrecision.htm>
